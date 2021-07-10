@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Fiber Landing Page</title>
 </head>
@@ -33,7 +34,7 @@
     <!-- Hero Section -->
     <section class="bd-container hero">
         <div class="content hero-content">
-            <div class=" hero-text  text-box ">
+            <div class=" hero-text  text-box " data-aos="fade-up" data-aos-duration="1200">
                 <div class="star">
                     <div class="stars">
                         <img src="Assets/star.svg" alt="">
@@ -65,7 +66,7 @@
                     </div>
                 </div>
             </div>
-            <div class="mock-img">
+            <div class="mock-img" data-aos="fade-down" data-aos-duration="2000">
                 <img src="Assets/hero-Illustration.png" alt="">
             </div>
         </div>
@@ -73,11 +74,11 @@
 
     <!-- Why Fiber -->
     <section class="ba-container">
-        <div class="fiber-section">
+        <div class="fiber-section" data-aos="fade-right" data-aos-duration="1000">
             <h3>Why Fiber?</h3>
             <h1>A good portfolio means good employability</h1>
         </div>
-        <div class="cards">
+        <div class="cards" data-aos="fade-left" data-aos-duration="1100">
             <div class="card">
                 <img src="Assets/time.svg" alt="">
                 <h3>Build in minutes</h3>
@@ -98,7 +99,7 @@
 
     <!-- Portfolio section -->
     <section class="bd-container">
-        <div class="portfolio">
+        <div class="portfolio" data-aos="fade-up" data-aos-duration="1400">
             <div class="text-area">
                 <h3>Diversify your portfolio.</h3>
                 <p>Create an even more impressive portfolio by creating case studies for your projects. Simply follow
@@ -113,7 +114,7 @@
 
     <!-- Testimonial section -->
     <section class="bd-container cardss">
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-duration="1400">
             <div class="avatar">
                 <div class="avatar-img"><img src="Assets/User Avatar.svg" alt=""></div>
                 <div>
@@ -127,7 +128,7 @@
             <a href="signup.html" class="button3">View Sarah's Portfolio</a>
         </div>
 
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-duration="1500">
             <div class="avatar">
                 <div class="avatar-img"><img src="Assets/User Avatar 2.svg" alt=""></div>
                 <div>
@@ -141,7 +142,7 @@
             <a href="signup.html" class="button3">View Mathew's Portfolio</a>
         </div>
 
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-duration="1600">
             <div class="avatar">
                 <div class="avatar-img"><img src="Assets/User Avatar 32.svg" alt=""></div>
                 <div>
@@ -158,13 +159,13 @@
 
     <!-- Footer -->
     <footer>
-        <div class="footer-left">
+        <div class="footer-left" data-aos="fade-right" data-aos-duration="1000">
             <a href="" class="footer-logo">Fiber</a>
             <p>With Fiber, you can setup your own personal portfolio in minutes with dozens of premade, beautiful
                 templates. <br> <br> Made with &#x2764; in the Netherlands.
             </p>
         </div>
-        <div class="footer-right">
+        <div class="footer-right" data-aos="fade-left" data-aos-duration="1100">
             <ul class="footer-items">
                 <li class="footer-item">
                     <h3>SiteMap</h3>
@@ -203,6 +204,10 @@
 
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
