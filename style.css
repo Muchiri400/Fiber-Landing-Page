@@ -7,10 +7,11 @@
     list-style: none;
 }
 body{
-    
+    overflow-x: hidden;
 }
 
 html {
+    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 header{
@@ -61,6 +62,9 @@ nav .nav-item{
     font-weight: 600;
     color: rgb(66, 64, 64); 
 }
+
+
+/* Buttons Section */
 .button{
     display: inline-block;
     background-color: rgb(28, 28, 228);
@@ -102,6 +106,9 @@ nav .nav-item{
 /* Hero Section */
 .hero{
     background: rgb(239, 230, 243);
+}
+.hamburger{
+    display: none;
 }
 
 .content{
@@ -196,10 +203,14 @@ nav .nav-item{
 .cards .card p{
     font-size: 1.2rem;
 }
-/* Portfolio section */
+
+
+/* Diversify Portfolio section */
 .portfolio{
     display: flex;
     width: 100%;
+    min-height: 60vh;
+    margin-top: 3rem;
     font-family: 'Poppins', sans-serif;
     justify-content: space-between;
     align-items: center;
@@ -221,7 +232,8 @@ nav .nav-item{
     margin-bottom: 1.2rem;
 }
 
-/* portfolio section */
+
+/* Testimonial section */
 .avatar{
     display: flex;
     align-items: center;
@@ -245,6 +257,7 @@ nav .nav-item{
 .avatar h4{
     color: rgb(56, 56, 212);
 }
+
 
 /* Footer section */
 footer{
@@ -288,5 +301,186 @@ footer{
 }
 .footer-link{
     padding: 1rem 0 0rem 0;
-
 }
+
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    header{
+        padding-top: 2rem;
+    }
+    .bd-container{
+        position: relative;
+        width: 100%;
+        min-height: 40vh;
+        padding: 0 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .hero-content{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .content .text-box{
+        max-width: 800px;
+        padding: 3rem 0;
+    }
+    .cards .card{
+        padding: 1rem 1rem;
+    }
+    .cards .card p{
+        font-size: 1rem;
+    }
+    .mock-img{
+        max-width: 350px;
+    }
+    .portfolio{
+        min-height: 23vh;
+    }
+    .portfolio .text-area h3{
+        font-size: 1.5rem;
+    }
+    .portfolio .text-area p{
+        font-size: 1rem;
+    }
+    .cards .card{
+        max-width: 200px;
+    }
+    .cards .card p{
+        font-size: .8rem;
+    }
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 40px 80px 0px 80px;
+        margin-top: 5rem;
+        }
+    .footer-right{
+        width: 300px;
+    }
+    .footer-items{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .footer-item{
+        margin-bottom: 2rem;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
+    .bd-container{
+        padding: 0 20px;
+    }
+    .ba-container{
+        padding: 0 20px;
+    }
+    header{
+        padding: 20px 20px;
+    }
+    .hamburger{
+        display: block;
+    }
+    
+    nav{
+       padding: 0 20px;
+    }
+    nav ul{
+        display: none;
+    }
+    .btns{
+        display: none;
+    }
+    .content .text-box{
+        max-width: 600px;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .content .text-box h1{
+        font-size: 1.5rem;
+    }
+    .text-box .rate p{
+        font-size: .8rem;
+    }
+    .text-box .hero-links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+    .text-box .hero-links .start{
+        width: 100%;
+        text-align: center;
+    }
+    .text-box .check{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .fiber-section h1{
+        font-size: 1.2rem;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: initial;
+    }
+    .cards .card{
+        max-width: 400px;
+    }
+    .cards .card{
+        padding: 1rem 0rem;
+    }
+    .portfolio .text-area{
+        margin: 0 0 1.5rem 0; 
+    }
+    .mock-img{
+        max-width: 288px;
+    }
+    .portfolio{
+        display: flex;
+        flex-direction: column;
+        padding: 4rem 1rem 0 1rem;
+    }
+    .cardss{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2.5rem;
+    }
+    .bd-container .card{
+        margin-bottom: 2rem;
+    }
+    footer{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+        padding: 40px 20px 0px 20px; 
+        }
+        .footer-left{
+            width: 300px;
+        }
+        .footer-left p{
+            font-size: .9rem;
+        }
+        
+        .footer-right{
+            width: 320px;
+        }
+        .footer-items{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .footer-item{
+            margin-right: 1.5rem;
+            margin-bottom: 2rem;
+        }
+}
+
