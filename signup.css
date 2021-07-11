@@ -154,7 +154,7 @@ body{
     .inputt{
         position: absolute;
         width: 100%;
-        max-width: 320px;
+        max-width: 350px;
     }
     .signup-form .eye{
         position: relative;
