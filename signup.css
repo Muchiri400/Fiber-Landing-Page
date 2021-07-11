@@ -6,7 +6,7 @@ body{
 .bd-container{
     width: 100%;
     min-height: 80vh;
-    padding: 0 100px;
+    padding: 0 80px;
     display: flex;
     font-family: 'Poppins', sans-serif;
     align-items: center;
@@ -52,11 +52,18 @@ body{
     font-weight: 600;
     color:rgb(14, 14, 223);
 }
+.already{
+    text-align: center;
+}
+.already span{
+    color: rgb(14, 14, 223);
+}
 .button{
     display: inline-block;
     background-color: rgb(14, 14, 223);
     color: #fff;
     width: 100%;
+    font-size: 1.3rem;
     cursor: pointer;
     padding: 1rem 1rem;
     border: none;
@@ -117,4 +124,31 @@ body{
       position: relative;
       left: 475px;
       top: 10px;
+  }
+
+  /* Media queries */
+
+  @media (max-width: 768px){
+    .bd-container{
+        padding: 0 20px;
+    }
+      .portfolio{
+          display: none;
+    }
+    .signup-form{
+        max-width: 800px;
+        padding: 0;
+    }
+    .inputt{
+        position: absolute;
+        width: 100%;
+        max-width: 340px;
+    }
+    .signup-form .eye{
+        position: relative;
+        left: 320px;
+        top: 10px;
+    }
+
+
   }
